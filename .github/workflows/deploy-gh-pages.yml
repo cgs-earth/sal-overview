@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Path to your static files (e.g., 'dist', 'build', or '.' for root)
-          path: 'dist' 
+          path: './dist' 
 
       - name: Deploy to GitHub Pages
         id: deployment
