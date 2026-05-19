@@ -22,7 +22,10 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
+      - name: Run build to create dist artifacts 
+        run: |
+          echo "Running make build..."
+          make build 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
