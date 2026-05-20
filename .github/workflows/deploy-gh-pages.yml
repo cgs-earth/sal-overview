@@ -27,6 +27,7 @@ jobs:
           echo "Running make build..."
           make build 
       - name: Upload artifact
+        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload contents of the dist directory
