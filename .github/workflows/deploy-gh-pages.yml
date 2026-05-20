@@ -29,8 +29,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Path to your static files (e.g., 'dist', 'build', or '.' for root)
-          path: './dist' 
+          # Upload contents of the dist directory
+          path: 'dist' 
 
       - name: Deploy to GitHub Pages
         id: deployment
