@@ -2,5 +2,6 @@
 
 
 build:
-	mkdir -p dist/
-	cp respec/index.html dist/
+	mkdir -p docs/
+	cp respec/index.html docs/
+	cp respec/index.html .
