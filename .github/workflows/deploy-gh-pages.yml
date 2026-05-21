@@ -6,9 +6,9 @@ on:
   workflow_dispatch: # Allows manual triggering from the Actions tab
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: read  # Read source code
+  pages: write  # Required to publish to Pages
+  id-token: write   # Required for OIDC authentication
 
 jobs:
   build:
