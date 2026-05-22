@@ -10,8 +10,14 @@
     ></script>
     <script class="remove">
       var respecConfig = {
-        specStatus: "ED",
-        editors: [{ name: "Andrew Padilla", url: "https://www.linkedin.com/in/andrew-padilla-8988094a/" }],
+        specStatus: "WD",
+        editors: [
+          { name: "Andrew Padilla", 
+            url: "https://www.linkedin.com/in/andrew-padilla-8988094a/",
+            company: "Center for Geospatial Solutions, Lincoln Institute of Land Policy",
+            companyURL: "https://cgsearth.org"}
+        
+        ],
         github: "cgs-earth/sal-overview",
         shortName: "sal-overview",
         xref: "web-platform",
@@ -22,33 +28,87 @@
   <body>
     <section id="abstract">
       <p>
-	This spec defines the My API.
+
+      The increasing availability of open data has improved access to information across scientific, governmental, and
+      organizational domains, yet interoperability remains constrained by fragmented formats, inconsistent interfaces, and the
+      loss of contextual meaning as data moves between systems. Existing approaches to interoperability largely emphasize
+      syntactic compatibility, placing substantial burden on users to manually harmonize datasets, reconstruct context, and
+      maintain institutional knowledge across organizational boundaries.
+      
+      This document introduces the Semantic Accessibility Layer (SAL), a federated semantic infrastructure that operates
+      between data publishers and users to preserve meaning throughout the semantic data product lifecycle. Anchored in
+      publicly accessible cloud-native infrastructure, SAL enables the creation, testing, publication, discovery, governance,
+      and reuse of semantic data products while recognizing the inherently sociotechnical nature of knowledge curation. SAL
+      supports collaborative alignment of meaning through shared semantic models, executable workflows, and portable semantic
+      representations that remain interoperable across systems, institutions, and scales. The goal of SAL is to reduce the
+      friction of semantic integration while improving the continuity, accessibility, and collective reuse of knowledge in
+      distributed data ecosystems.
+
+        
+
       </p>
     </section>
-    <section id="sotd"></section>
+    <section id="sotd">
+      <p>
+        This section describes the status of this document at the time of its publication. Other documents may supersede this document.
+      </p>
+    </section>
     <section class="informative">
       <h2>Introduction</h2>
-      <p>Some introductory text.</p>
-      <aside class="note" title="A note">
-        <p>Notes look like this.</p>
-      </aside>
+      <p>
+          
+      Open data repositories and portals have expanded significantly following the emergence of coordinated open data
+      initiatives in the late 2000s and early 2010s, although their long-term
+      availability and stewardship are increasingly subject to shifting institutional, operational, and societal conditions.
+      Since the rise of these open data initiatives, open data has increasingly been published and accessed through
+      diverse mechanisms including APIs, cloud platforms, files, databases, message streams, and domain-specific repositories
+      at unprecedented scale. While these efforts have improved access to information, they have not resolved the broader
+      challenge of semantic interoperability.
+
+      Open data users are still frequently required to manually interpret schemas, reconcile terminology, reconstruct
+      provenance,
+      and maintain informal mappings between systems in order to derive meaningful insight from distributed data sources.
+
+      Much of the current interoperability landscape emphasizes syntactic exchange over semantic continuity. Formats
+      and interfaces make data transferable, but they do not by themselves preserve the meaning, assumptions, context, or
+      collaborative understanding associated with that data. As the number of organizations, contributors, and systems
+      participating in data exchange increases, the burden of maintaining shared understanding compounds across institutions
+      and scales. The principal bottleneck to shared understanding increasingly becomes the speed of human negotiation, learning, and collective
+      uptake rather than the mechanics of data transport alone.
+
+      At the same time, knowledge curation is inherently sociotechnical. Meaning is not produced solely through static
+      datasets, but through the ongoing interaction between people, systems, workflows, models, and interpretation over time.
+      Existing open data portals often fail to preserve this process, resulting in semantic fragmentation where context
+      and institutional knowledge become disconnected from the data itself.
+
+      SAL is proposed as a lightweight federated semantic infrastructure designed to address these
+      limitations. SAL operates between data publishers and users as a semantic coordination layer that supports the full
+      lifecycle of semantic data products, including creation, testing, packaging, deployment, governance, discovery, and
+      reuse. Rather than treating semantics as an afterthought, SAL makes meaning a first-class concern that persists
+      throughout executable workflows, shared semantic representations, and collaborative curation processes distributed across
+      organizations and infrastructure environments.
+
+      Beginning from the premise that free-tier and low-barrier publicly accessible cloud-native infrastructure is essential
+      for broad participation in semantic data publication and collaboration. SAL is designed to support portable operation across
+      storage, compute, and governance boundaries, ranging from zero-scale execution in local-first environments to
+      large-scale federated infrastructure environments. This same architectural foundation
+      also enables organizations with stricter operational, governance, service-level, or regulatory requirements to deploy
+      within more controlled infrastructure environments while preserving interoperability across the broader ecosystem.
+      Through federated collaboration models and shared semantic mechanisms, SAL seeks to reduce the friction of semantic
+      interoperability while enabling knowledge to remain interpretable, reusable, and evolvable over time. In doing so, SAL
+      endeavors to deliver a more resilient and broadly accessible approach to semantic interoperability at global scale. 
+
+      </p>
+     
     </section>
     <section data-dfn-for="Foo">
       <h2>The <code>Foo</code> interface</h2>
-      <pre class="idl">
-        [Exposed=Window]
-        interface Foo {
-          attribute DOMString bar;
-          undefined doTheFoo();
-        };
-      </pre>
-      <p>The <dfn>Foo</dfn> interface represents a {{Foo}}.</p>
-      <p>The <dfn>doTheFoo()</dfn> method does the foo. Call it via {{Foo/doTheFoo()}}.</p>
-      <ol class="algorithm">
-        <li>Let |result:DOMString| be a new string.</li>
-        <li>Return |result|.</li>
-      </ol>
+     
     </section>
+      <h2> sal-cli </h2>
+      <h2>sal-pub</h2>
+      <h2>sal-module-spec</h2>
+      
     <section id="conformance"></section>
   </body>
 </html>
